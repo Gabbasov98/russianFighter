@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button data-modal="reviewModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Написать отзыв
+        </button>
+
+
+        <!--        <code>-->
+
+
+        <!--            ('components/page-blocks/_filter-slider.html',{ <br>-->
+        <!--            "start1":"0", <br>-->
+        <!--            "start2":"30000", <br>-->
+        <!--            "min":"1000", <br>-->
+        <!--            "max":"100000", <br>-->
+        <!--            })-->
+
+        <!--        </code>-->
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reviewModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="h3">
+                Написать отзыв
+            </div>
+            <form action="" class="modal-form">
+                <div class="rating">
+                    <div class="rating-input" data-total-rating="@@num" data-rating-code="1">
+                        <div class="rating-input__item" data-rating-value="5">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="4">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="3">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="2">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="1">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <input class="rating-input__field" type="number" value="0">
+
+
+                    </div>
+                </div>
+                <div class="fg">
+                    <textarea placeholder="Введите текст"></textarea>
+                </div>
+                <div class="fg">
+                    <label>Имя</label>
+                    <input type="text">
+                </div>
+                <div class="modal-form__nav">
+                    <button class="modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
