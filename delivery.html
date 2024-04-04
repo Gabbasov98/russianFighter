@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Доставка и оплата</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <div class="header-top__col1">
+                            <div class="header-city">
+                                <div class="header-city__show">
+                                    <span class="text14">Москва</span>
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.5 8L10.5 13L15.5 8" stroke="#4F595E" stroke-width="1.2" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="header-contacts _flex text-base-dn">
+                                <div class="text14">На связи: 9:00 - 18:00</div>
+                                <a href="tel:+74957777777" class="header-contacts__phone text14">
+                                    +7 495 777-77-77
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-top__col2">
+                            <div class="header-top__by text-base-dn">
+                                <img src="img/ru.webp" alt="">
+                                <span class="text12">Сделанo в России</span>
+                            </div>
+                        </div>
+                        <div class="header-top__col3">
+                            <div class="header-nav text-base-dn">
+                                <ul class="menu">
+                                    <li><a href="">Доставка и оплата</a></li>
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">О нас</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__inner">
+                        <div class="header-middle__col1">
+                            <button class="burger">
+                                <img src="img/burger.svg" alt="" class="_view1">
+                                <img src="img/burger2.svg" alt="" class="_view2">
+                            </button>
+                            <div class="header-search">
+                                <button class="header-search__btn">
+                                    <img src="img/search2.svg" alt="" class="_view1">
+                                    <img src="img/burger2.svg" alt="" class="_view2">
+                                </button>
+                                <div class="header-search__field fg">
+                                    <input type="text" placeholder="Поиск">
+                                    <img src="img/search.svg" alt="" class="header-search__icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-middle__col2">
+                            <a href="" class="header__logo">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header-middle__col3">
+                            <div class="header-action _flex">
+                                <a href="" class="header-action__item _hide-tablet">
+                                    <span class="header-action__icon">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.4932 12.1222C14.1296 12.1222 17.1407 13.6736 17.5266 15.0285V16.9218H3.44702V15.0285C3.79893 13.5712 7.13366 12.1222 10.4932 12.1222ZM10.4932 11C7.8314 11 2.5 12.316 2.5 15.0285V18H18.5V15.0285C18.5 12.316 13.155 11 10.4932 11Z" fill="#2E2C2F" />
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 9C12.1569 9 13.5 7.65685 13.5 6C13.5 4.34315 12.1569 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6C7.5 7.65685 8.84315 9 10.5 9ZM10.5 10C12.7091 10 14.5 8.20914 14.5 6C14.5 3.79086 12.7091 2 10.5 2C8.29086 2 6.5 3.79086 6.5 6C6.5 8.20914 8.29086 10 10.5 10Z" fill="#2E2C2F" />
+                            </svg>
+                        </span>
+                                    <span class="text18">Войти</span>
+                                </a>
+                                <a href="" class="header-action__item">
+                                    <span class="header-action__icon">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5001 5.46496L9.68132 4.56064C7.99827 2.71531 5.09335 3.42326 3.97931 5.74325C3.4563 6.83445 3.27935 8.25155 4.23438 10.2622C5.1544 12.1982 7.04803 14.418 10.5001 16.9439C13.9522 14.418 15.8227 12.1982 16.7437 10.2622C17.6988 8.25048 17.6673 6.83445 17.1433 5.74325C16.0292 3.42326 12.9798 2.71531 11.2967 4.56064L10.5001 5.46496ZM10.5001 18.4155C-4.83333 7.6081 5.77899 -0.827077 10.3241 3.63478C10.3841 3.69344 10.4431 3.75424 10.5001 3.81717C10.5566 3.7543 10.6153 3.69381 10.6761 3.63584C15.2203 -0.82921 25.8336 7.60703 10.5001 18.4155Z" fill="#242627"/>
+                            </svg>
+                        </span>
+                                    <span class="text18">Избранное</span>
+                                </a>
+                                <a href="" class="header-action__item">
+                                    <span class="header-action__icon">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 2.70221C11.1812 2.70221 11.8344 2.9768 12.3161 3.46559C12.7978 3.95437 13.0684 4.61731 13.0684 5.30855V5.82982H7.93164V5.30855C7.93164 4.61731 8.20223 3.95437 8.6839 3.46559C9.16556 2.9768 9.81883 2.70221 10.5 2.70221ZM14.0957 5.82982V5.30855C14.0957 4.34081 13.7169 3.4127 13.0425 2.7284C12.3682 2.0441 11.4536 1.65967 10.5 1.65967C9.54636 1.65967 8.63178 2.0441 7.95745 2.7284C7.28313 3.4127 6.9043 4.34081 6.9043 5.30855V5.82982H3.30859V16.2552C3.30859 16.8082 3.52507 17.3385 3.9104 17.7296C4.29573 18.1206 4.81834 18.3403 5.36328 18.3403H15.6367C16.1817 18.3403 16.7043 18.1206 17.0896 17.7296C17.4749 17.3385 17.6914 16.8082 17.6914 16.2552V5.82982H14.0957ZM4.3957 6.96233H16.6178V16.2552C16.6178 16.5317 16.5497 16.7614 16.3571 16.9569C16.1644 17.1524 15.9092 17.2212 15.6367 17.2212H5.36328C5.09081 17.2212 4.85433 17.1434 4.66167 16.9479C4.469 16.7524 4.3957 16.5317 4.3957 16.2552V6.96233Z" fill="#242627"/>
+                            </svg>
+                        </span>
+                                    <span class="text18">Корзина (0)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item _hide-desktop">
+                                <a href="">Главная</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">Каталог</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a>Виды спорта</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">Кудо</a></li>
+                                    <li class="menu-item"><a href="">Тайский бокс</a></li>
+                                    <li class="menu-item"><a href="">Бокс</a></li>
+                                    <li class="menu-item"><a href="">Кикбоксинг</a></li>
+                                    <li class="menu-item"><a href="">Киокушин</a></li>
+                                    <li class="menu-item"><a href="">ММА</a></li>
+                                    <li class="menu-item"><a href="">Самбо</a></li>
+                                    <li class="menu-item"><a href="">Тхэквондо</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a>Бренды</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">Reyvel</a></li>
+                                    <li class="menu-item"><a href="">RFighter</a></li>
+                                    <li class="menu-item"><a href="">Kudowear</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a>Товары</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">Аксессуары</a></li>
+                                    <li class="menu-item"><a href="">Защита</a></li>
+                                    <li class="menu-item"><a href="">Кимоно</a></li>
+                                    <li class="menu-item"><a href="">Одежда</a></li>
+                                    <li class="menu-item"><a href="">Перчатки</a></li>
+                                    <li class="menu-item"><a href="">Снаряды</a></li>
+                                    <li class="menu-item"><a href="">Форма</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-profile _hide-desktop">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.99322 12.1222C13.6296 12.1222 16.6407 13.6736 17.0266 15.0285V16.9218H2.94702V15.0285C3.29893 13.5712 6.63366 12.1222 9.99322 12.1222ZM9.99322 11C7.3314 11 2 12.316 2 15.0285V18H18V15.0285C18 12.316 12.655 11 9.99322 11Z" fill="#2E2C2F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 9C11.6569 9 13 7.65685 13 6C13 4.34315 11.6569 3 10 3C8.34315 3 7 4.34315 7 6C7 7.65685 8.34315 9 10 9ZM10 10C12.2091 10 14 8.20914 14 6C14 3.79086 12.2091 2 10 2C7.79086 2 6 3.79086 6 6C6 8.20914 7.79086 10 10 10Z" fill="#2E2C2F" />
+                        </svg>
+                        <span class="text18">Войти</span>
+                    </a>
+                    <div class="header-nav2 _hide-desktop">
+                        <div class="text18 text-base-up">
+                            Как мы работаем
+                        </div>
+                        <ul class="menu">
+                            <li><a href="">Доставка и оплата</a></li>
+                            <li><a href="">Помощь</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-city2 _hide-desktop">
+                        <div class="text18 text-base-up">
+                            Регион доставки
+                        </div>
+                        <div class="header-city2__item">
+                            <div class="text18">Москва</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="delivery-pay page-block">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li><a href="">Главная</a></li>
+                        <li><a>Доставка и оплата</a></li>
+                    </ul>
+                    <div class="profile__title">
+                        <h1 class="h1 h2-tablet">
+                            Доставка и оплата
+                        </h1>
+                    </div>
+
+                    <div class="pay-ways _mt48">
+                        <div class="h2 h3-tablet">
+                            Способы оплаты
+                        </div>
+                        <div class="pay-ways__items _m28">
+                            <div class="pay-way">
+                                <img src="img/pay-icon.svg" alt="" class="pay-way__icon">
+                                <div class="pay-way__content">
+                                    <div class="text18 medium-text">
+                                        Наличными или банковской картой при получении
+                                    </div>
+                                    <div class="text18 text-base-dn">
+                                        К оплате принимаются карты платежных систем Visa, MИР
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pay-way">
+                                <img src="img/pay-icon2.svg" alt="" class="pay-way__icon">
+                                <div class="pay-way__content">
+                                    <div class="text18 medium-text">
+                                        Оплата на сайте
+                                    </div>
+                                    <div class="text18 text-base-dn">
+                                        К оплате принимаются карты платежных систем Visa, MИР
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pay-way">
+                                <img src="img/pay-icon3.svg" alt="" class="pay-way__icon">
+                                <div class="pay-way__content">
+                                    <div class="text18 medium-text">
+                                        Оплата курьеру
+                                    </div>
+                                    <div class="text18 text-base-dn">
+                                        Оплата курьеру при получении заказа.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="delivery-ways _mt80">
+                        <div class="h2 h3-tablet">
+                            Способы доставки
+                        </div>
+                        <div class="grid4 grid2-tablet grid-mob _m28">
+                            <div class="delivery-way delivery-way--type2">
+                                <img src="img/pay-icon3.svg" alt="" class="delivery-way__icon">
+                                <div class="text18 medium-text">
+                                    Курьерская доставка <br> по Москве
+                                </div>
+                            </div>
+                            <div class="delivery-way">
+                                <img src="img/delivery-way.svg" alt="" class="delivery-way__img">
+                            </div>
+                            <div class="delivery-way">
+                                <img src="img/delivery-way2.svg" alt="" class="delivery-way__img">
+                            </div>
+                            <div class="delivery-way">
+                                <img src="img/delivery-way3.svg" alt="" class="delivery-way__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courier _mt80">
+                        <div class="h2 h3-tablet">
+                            Курьерская доставка по Москве
+                        </div>
+                        <div class="text _mt16 text-base-dn">
+                            <ul>
+                                <li>Оплата производится онлайн или наличными курьеру при получении.</li>
+                                <li>Время доставки зависит от выбранной курьерской службы и зоны доставки.</li>
+                                <li>Заказ от 5 000 ₽ - бесплатно.</li>
+                                <li>Заказ до 5 000 ₽ - 349 ₽.</li>
+                                <li>Минимальная сумма заказа - 1 000 ₽.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offices _mt80 _tabs-parent">
+                        <div class="h2 h3-tablet">
+                            Пункты выдачи и доставки
+                        </div>
+                        <div class="tabs _m28">
+                            <div class="tab _tab _active" data-tab="_tab1">
+                                <span>Список</span>
+                            </div>
+                            <div class="tab _tab" data-tab="_tab2">
+                                <span>На карте</span>
+                            </div>
+                        </div>
+                        <div class="offices__grid">
+                            <div class="tab-content _tab1 _active">
+                                <div class="offices__col">
+                                    <div class="offices__subtitle text18 text-base-dn">
+                                        Адреса получения
+                                    </div>
+                                    <div class="offices__items _m28">
+                                        <div data-id="0" class="office-item _active text18">
+                                            г. Москва, ул.Полиграфистов, 555111
+                                        </div>
+                                        <div data-id="1" class="office-item text18">
+                                            г. Москва, Николоямская ул., 555222
+                                        </div>
+                                        <div data-id="2" class="office-item text18">
+                                            г. Москва, ул.Лавочкина, 222111
+                                        </div>
+                                        <div data-id="3" class="office-item text18">
+                                            г. Москва, Комсомольская площадь, 555555
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content _tab2">
+                                <div class="offices__col2">
+                                    <div class="map" id="map">
+
+                                    </div>
+                                    <script>
+                                        ymaps.ready(init);
+                                        let coord = [55.156482, 37.47695]
+                                        let mapPoints = [{
+                                                cords: [55.156482, 37.476959]
+                                            },
+                                            {
+                                                cords: [55.747201, 37.657431]
+                                            },
+                                            {
+                                                cords: [55.855224, 37.493695]
+                                            },
+                                            {
+                                                cords: [55.775327, 37.655643]
+                                            },
+                                        ]
+
+                                        function init() {
+                                            let myMap = new ymaps.Map("map", {
+                                                center: coord,
+                                                zoom: 15,
+                                                controls: [],
+                                            });
+
+                                            myMap.controls.add('zoomControl');
+
+                                            let placeMarks = [
+
+                                            ]
+
+                                            myMap.behaviors.disable('scrollZoom');
+
+
+                                            mapPoints.forEach((el, index) => {
+                                                let placeMark = new ymaps.Placemark(el.cords, {}, {
+                                                    iconLayout: 'default#image',
+                                                    iconImageHref: "img/mark.svg",
+                                                    iconImageSize: [15, 20],
+                                                    iconImageOffset: [-7.5, -10]
+                                                });
+                                                myMap.geoObjects.add(placeMark);
+                                                placeMarks.push(placeMark)
+
+                                                function setActivePoint(card) {
+                                                    let cardId = +$(card).attr("data-id")
+                                                    if (index === cardId) {
+                                                        myMap.setCenter(el.cords)
+                                                    }
+                                                    $(".office-item").removeClass("_active")
+                                                    $(card).addClass("_active")
+                                                }
+
+                                                $(".office-item").click(function() {
+                                                    setActivePoint($(this))
+                                                })
+
+                                                setActivePoint($(".center-item._active"))
+                                            })
+
+
+
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pay-ways _mt48">
+                        <div class="pay-ways__items">
+                            <div class="pay-way">
+                                <img src="img/pay-icon4.svg" alt="" class="pay-way__icon">
+                                <div class="pay-way__content">
+                                    <div class="text18 medium-text">
+                                        Документы для получения
+                                    </div>
+                                    <div class="text18 text-base-dn">
+                                        Для получения товара назовите сотруднику номер заказа. <br> Для получения заказа также может потребоваться документ, удостоверяющий личность.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pay-way">
+                                <img src="img/pay-icon5.svg" alt="" class="pay-way__icon">
+                                <div class="pay-way__content">
+                                    <div class="text18 medium-text">
+                                        Срок хранения
+                                    </div>
+                                    <div class="text18 text-base-dn">
+                                        Срок хранения товаров 3-7 дней.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="delivery-calc _mt80">
+                        <div class="delivery-calc__col">
+                            <div class="delivery-calc__info">
+                                <div class="h3">
+                                    Калькулятор стоимости доставки заказа
+                                </div>
+                                <div class="text18 text-base-dn">
+                                    Для расчета доставки выберите адрес, укажите вес заказа и нажмите кнопку «Рассчитать». Точная стоимость рассчитывается при оформлении заказа.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery-calc__col">
+                            <form action="" class="delivery-form">
+                                <div class="fg">
+                                    <label>Город</label>
+                                    <select>
+                                        <option selected>Москва</option>
+                                        <option>Санкт-Петербург</option>
+                                        <option>казань</option>
+                                    </select>
+                                </div>
+                                <div class="fg">
+                                    <label>Улица</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fg">
+                                    <label>Вес заказа (кг)</label>
+                                    <input type="text">
+                                </div>
+                                <button class="delivery-form__btn m-btn m-btn-primary">
+                                    <span>Рассчитать</span>
+                                </button>
+                            </form>
+                            <div class="delivery-form__result _m28">
+                                <div class="text18 medium-text">
+                                    Стоимость доставки
+                                </div>
+                                <div class="h3">
+                                    900 ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__inner">
+                        <div class="footer-top__col">
+                            <div class="text14 text-dark-base-dn">
+                                Интернет-магазин
+                            </div>
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a href="">Доставка и оплата</a></li>
+                                    <li><a href="">Помощь</a></li>
+                                    <li><a href="">О нас</a></li>
+                                </ul>
+                            </nav>
+                            <div class="footer-brands">
+                                <div class="text14 text-dark-base-dn">
+                                    Работаем с брендами
+                                </div>
+                                <div class="footer-brands__items">
+                                    <a href="" class="footer-brands__item">
+                                        <img src="img/brand.svg" alt="">
+                                    </a>
+                                    <a href="" class="footer-brands__item">
+                                        <img src="img/brand2.svg" alt="">
+                                    </a>
+                                    <a href="" class="footer-brands__item">
+                                        <img src="img/brand3.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-top__col2">
+                            <a href="" class="footer__logo">
+                                <img src="img/logo2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-top__col3">
+                            <div class="footer-contacts">
+                                <div class="text14 text-dark-base-dn">
+                                    На связи Пн.-Пт. с 9:00 до 18:00
+                                </div>
+                                <div class="footer-contacts__items">
+                                    <div class="footer-contacts__item">
+                                        <a href="tel:+78003015320" class="text18">
+                                            +7 (800) 301-53-20
+                                        </a>
+                                        <span class="text14">Бесплатный звонок</span>
+                                    </div>
+                                    <div class="footer-contacts__item">
+                                        <a href="tel:+74951563007" class="text18">
+                                            +7 (495) 156-3007
+                                        </a>
+                                        <span class="text14">Москва</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-contacts2">
+                                <div class="text14 text-dark-base-dn">
+                                    Контакты
+                                </div>
+                                <div class="footer-contacts__items">
+                                    <div class="footer-contacts__item">
+                                        <a href="mailto:reyvelru@gmail.com" class="text18">
+                                            reyvelru@gmail.com
+                                        </a>
+                                    </div>
+                                    <div class="footer-contacts__item">
+                                        <div class="text18">
+                                            Россия, Московская область, г.Чехов
+                                            ул.Полиграфистов, 1Б
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__inner text-dark-base-dn">
+                        <div class="footer__c text14">© 2012-2022</div>
+                        <div class="footer__co text14">ООО «ЭКИП ЦЕНТР»</div>
+                        <div class="footer__conf text14">Пользовательское соглашение</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+    <div class="modal" id="reviewModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="h3">
+                Написать отзыв
+            </div>
+            <form action="" class="modal-form">
+                <div class="rating">
+                    <div class="rating-input" data-total-rating="@@num" data-rating-code="1">
+                        <div class="rating-input__item" data-rating-value="5">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="4">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="3">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="2">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <div class="rating-input__item" data-rating-value="1">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5516 0.908315C11.7351 0.536731 12.2649 0.536731 12.4484 0.908315L15.4373 6.96355C15.51 7.11097 15.6506 7.2132 15.8133 7.23698L22.4981 8.21406C22.9081 8.27398 23.0715 8.7779 22.7747 9.06698L17.9384 13.7775C17.8205 13.8924 17.7666 14.0579 17.7945 14.2202L18.9357 20.8743C19.0058 21.2828 18.577 21.5943 18.2102 21.4014L12.2327 18.2579C12.087 18.1813 11.913 18.1813 11.7673 18.2579L5.78982 21.4014C5.423 21.5943 4.99423 21.2828 5.06429 20.8743L6.20554 14.2202C6.23337 14.0579 6.17954 13.8924 6.06161 13.7775L1.22534 9.06698C0.928542 8.7779 1.09193 8.27398 1.50189 8.21406L8.18668 7.23698C8.34936 7.2132 8.48995 7.11097 8.56272 6.96355L11.5516 0.908315Z" stroke-width="2" stroke="#32A2A8" />
+                            </svg>
+                        </div>
+                        <input class="rating-input__field" type="number" value="0">
+
+
+                    </div>
+                </div>
+                <div class="fg">
+                    <textarea placeholder="Введите текст"></textarea>
+                </div>
+                <div class="fg">
+                    <label>Имя</label>
+                    <input type="text">
+                </div>
+                <div class="modal-form__nav">
+                    <button class="modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal req-modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="req-modal__inner">
+                <div class="h2">
+                    Заявка на сотрудничество
+                </div>
+                <div class="modal__desc _mt48">
+                    <div class="text18">
+                        Нам менеджер свяжется с вами в ближайшее время для уточнения деталей по экипировке. Ожидайте звонок в будни с 9:00 до 18:00.
+                    </div>
+                </div>
+                <form action="" class="modal-form _m28">
+                    <div class="fg">
+                        <label>Имя*</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Телефон*</label>
+                        <input type="tel">
+                    </div>
+                    <div class="fg">
+                        <label>Почта*</label>
+                        <input type="email">
+                    </div>
+                    <div class="modal-form__checks">
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Даю согласие на обработку <a href="">персональных данных</a> и соглашаюсь с <a href="">политикой конфиденциальности</a>
+                            </span>
+                            </label>
+                        </div>
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Хочу получать рекламные материалы. Рассылка не более 2 раз в  месяц
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn-primary">
+                            <span>Получить индивидуальные условия</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal req-modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="req-modal__inner">
+                <div class="h2">
+                    Заявка на индивидуальные условия
+                </div>
+                <div class="modal__desc _mt48">
+                    <div class="text18">
+                        Нам менеджер свяжется с вами в ближайшее время для уточнения деталей по экипировке. Ожидайте звонок в будни с 9:00 до 18:00.
+                    </div>
+                </div>
+                <form action="" class="modal-form _m28">
+                    <div class="fg">
+                        <label>Имя*</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Телефон*</label>
+                        <input type="tel">
+                    </div>
+                    <div class="fg">
+                        <label>Почта*</label>
+                        <input type="email">
+                    </div>
+                    <div class="modal-form__checks">
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Даю согласие на обработку <a href="">персональных данных</a> и соглашаюсь с <a href="">политикой конфиденциальности</a>
+                            </span>
+                            </label>
+                        </div>
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Хочу получать рекламные материалы. Рассылка не более 2 раз в  месяц
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn-primary">
+                            <span>Получить индивидуальные условия</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

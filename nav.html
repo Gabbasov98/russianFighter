@@ -8,8 +8,10 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
     <title>Главная</title>
 </head>
+
 
 
 <style>
@@ -31,12 +33,93 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
 
+        <hr style="margin-bottom: 20px;">
 
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Виды спорта
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Бренды
+        </a>
+        <a href="catalog3.html" style="display: block; margin-bottom: 20px;">
+            Товары
+        </a>
+        <a href="catalog4.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Авторизация
+        </a>
+        <a href="pass-recover.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля
+        </a>
+        <a href="pass-recover2.html" style="display: block; margin-bottom: 20px;">
+            Новый пароль
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="user-data.html" style="display: block; margin-bottom: 20px;">
+            Личные данные - Розничный
+        </a>
+        <a href="user-data2.html" style="display: block; margin-bottom: 20px;">
+            Личные данные - Тренер
+        </a>
+        <a href="user-data3.html" style="display: block; margin-bottom: 20px;">
+            Личные данные - ОПТ
+        </a>
+
+        <a href="profile-edit.html" style="display: block; margin-bottom: 20px;">
+            Редактировать профиль - Розничный
+        </a>
+        <a href="profile-edit2.html" style="display: block; margin-bottom: 20px;">
+            Редактировать профиль - Тренер
+        </a>
+        <a href="profile-edit3.html" style="display: block; margin-bottom: 20px;">
+            Редактировать профиль - ОПТ
+        </a>
+
+        <a href="pass-change.html" style="display: block; margin-bottom: 20px;">
+            Сменить пароль
+        </a>
+        <a href="orders.html" style="display: block; margin-bottom: 20px;">
+            История заказов
+        </a>
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            Заказ подробно
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="order-item.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
+        <a href="help.html" style="display: block; margin-bottom: 20px;">
+            Помощь
+        </a>
+        <a href="delivery.html" style="display: block; margin-bottom: 20px;">
+            Доставка и оплата
+        </a>
 
 
         <button data-modal="reviewModal" style="border: 2px solid #000;margin-bottom: 20px;">
             Написать отзыв
+        </button>
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на сотрудничество
+        </button>
+        <button data-modal="reqModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на индивидуальные условия
         </button>
 
 
@@ -59,6 +142,8 @@
 
 
 
+
+    <!--  -->
     <div class="modal" id="reviewModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
@@ -119,7 +204,124 @@
         </div>
     </div>
 
-    <!--  -->
+    <div class="modal req-modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="req-modal__inner">
+                <div class="h2">
+                    Заявка на сотрудничество
+                </div>
+                <div class="modal__desc _mt48">
+                    <div class="text18">
+                        Нам менеджер свяжется с вами в ближайшее время для уточнения деталей по экипировке. Ожидайте звонок в будни с 9:00 до 18:00.
+                    </div>
+                </div>
+                <form action="" class="modal-form _m28">
+                    <div class="fg">
+                        <label>Имя*</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Телефон*</label>
+                        <input type="tel">
+                    </div>
+                    <div class="fg">
+                        <label>Почта*</label>
+                        <input type="email">
+                    </div>
+                    <div class="modal-form__checks">
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Даю согласие на обработку <a href="">персональных данных</a> и соглашаюсь с <a href="">политикой конфиденциальности</a>
+                            </span>
+                            </label>
+                        </div>
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Хочу получать рекламные материалы. Рассылка не более 2 раз в  месяц
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn-primary">
+                            <span>Получить индивидуальные условия</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal req-modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5.05L14.95 4L10 8.95L5.05 4L4 5.05L8.95 10L4 14.95L5.05 16L10 11.05L14.95 16L16 14.95L11.05 10L16 5.05Z" fill="#2E2C2F" />
+                </svg>
+            </button>
+            <div class="req-modal__inner">
+                <div class="h2">
+                    Заявка на индивидуальные условия
+                </div>
+                <div class="modal__desc _mt48">
+                    <div class="text18">
+                        Нам менеджер свяжется с вами в ближайшее время для уточнения деталей по экипировке. Ожидайте звонок в будни с 9:00 до 18:00.
+                    </div>
+                </div>
+                <form action="" class="modal-form _m28">
+                    <div class="fg">
+                        <label>Имя*</label>
+                        <input type="text">
+                    </div>
+                    <div class="fg">
+                        <label>Телефон*</label>
+                        <input type="tel">
+                    </div>
+                    <div class="fg">
+                        <label>Почта*</label>
+                        <input type="email">
+                    </div>
+                    <div class="modal-form__checks">
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Даю согласие на обработку <a href="">персональных данных</a> и соглашаюсь с <a href="">политикой конфиденциальности</a>
+                            </span>
+                            </label>
+                        </div>
+                        <div class="m-check">
+                            <input type="checkbox">
+                            <label>
+                                <span>
+                                Хочу получать рекламные материалы. Рассылка не более 2 раз в  месяц
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-form__nav">
+                        <button class="modal-form__btn m-btn m-btn-primary">
+                            <span>Получить индивидуальные условия</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 
