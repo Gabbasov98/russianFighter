@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
-    <title>Авторизация</title>
+    <title>Оформить заказ</title>
 </head>
 
 
@@ -187,65 +187,235 @@
         </header>
         <main class="content">
 
-            <div class="auth">
+            <div class="order page-block">
                 <div class="container">
                     <ul class="breadcrumbs">
                         <li><a href="">Главная</a></li>
-                        <li><a>Авторизация</a></li>
+                        <li><a href="">Корзина</a></li>
+                        <li><a>Оформить заказ</a></li>
                     </ul>
-                    <div class="auth__inner">
-                        <form action="" class="auth-form">
-                            <h1 class="h2">
-                                Авторизация
-                            </h1>
-                            <div class="auth-form__fields">
-                                <div class="fg">
-                                    <label>E-mail*</label>
-                                    <input type="email">
-                                </div>
-                                <fieldset class="fg">
-                                    <label>Пароль *</label>
-                                    <div class="fg__field">
-                                        <input type="password">
-                                        <button type="button" class="pass-toggle">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17337 9.81735C3.26219 6.65385 6.36151 4.38776 9.99997 4.38776C13.6384 4.38776 16.7377 6.65385 17.8266 9.81735C17.8673 9.93571 17.8673 10.0643 17.8266 10.1826C16.7377 13.3462 13.6384 15.6122 9.99997 15.6122C6.36151 15.6122 3.26219 13.3462 2.17337 10.1826C2.13264 10.0643 2.13264 9.93571 2.17337 9.81735ZM3.30064 10C4.28528 12.606 6.90158 14.4898 9.99997 14.4898C13.0984 14.4898 15.7147 12.606 16.6993 10C15.7147 7.394 13.0984 5.51021 9.99997 5.51021C6.90158 5.51021 4.28528 7.394 3.30064 10Z" fill="#2E2C2F" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 7.75517C8.76009 7.75517 7.75502 8.76025 7.75502 10.0001C7.75502 11.2399 8.76009 12.245 9.99992 12.245C11.2397 12.245 12.2448 11.2399 12.2448 10.0001C12.2448 8.76025 11.2397 7.75517 9.99992 7.75517ZM6.63257 10.0001C6.63257 8.14033 8.14018 6.63272 9.99992 6.63272C11.8596 6.63272 13.3673 8.14033 13.3673 10.0001C13.3673 11.8598 11.8596 13.3674 9.99992 13.3674C8.14018 13.3674 6.63257 11.8598 6.63257 10.0001Z" fill="#2E2C2F" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </fieldset>
+                    <div class="breadcrumbs-mob">
+                        <a href="" class="breadcrumbs-mob__back">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 5L7.5 10L12.5 15" stroke="#979694" stroke-width="1.2" />
+                            </svg>
+                            <span class="text14">В корзину</span>
+                        </a>
+                    </div>
+                    <div class="profile__title">
+                        <h1 class="h1 h2-tablet">
+                            Оформить заказ
+                        </h1>
+                    </div>
 
-                                <div class="auth-form__wrap">
-                                    <div class="m-check">
-                                        <input checked type="checkbox">
-                                        <label>
-                                            <span>
-                                            Запомнить меня
-                                        </span>
-                                        </label>
+                    <div class="order__grid">
+                        <div class="order__col">
+                            <div class="order-pay2">
+                                <div class="h2 h3-tablet">
+                                    Способ оплаты
+                                </div>
+                                <div class="order-pay__items">
+                                    <div class="order-pay__item">
+                                        <div class="m-radio">
+                                            <input checked type="radio" name="payWay">
+                                            <label>
+                                                <span>ЮKassa </span>
+                                                <img src="img/yoomoney.svg" alt="" class="order-pay__item-img">
+                                            </label>
+                                        </div>
                                     </div>
-                                    <a href="" class="auth-form__link2 text-btn">
-                                        <span>Забыли пароль?</span>
+                                    <div class="order-pay__item">
+                                        <div class="m-radio">
+                                            <input type="radio" name="payWay">
+                                            <label>
+                                                <span>Безналичный расчёт</span>
+                                                <img src="img/card.svg" alt="" class="order-pay__item-icon">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="order-pay__item">
+                                        <div class="m-radio">
+                                            <input type="radio" name="payWay">
+                                            <label>
+                                                <span>Наличными курьеру (Москва)</span>
+                                                <img src="img/cash.svg" alt="" class="order-pay__item-icon">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="delivery-ways2">
+                                <div class="h2 h3-tablet">
+                                    Способы доставки
+                                </div>
+                                <div class="grid2 grid-mob _m28">
+                                    <div class="delivery-way__field">
+                                        <input checked type="radio" name="deliveryWay">
+                                        <div class="delivery-way delivery-way--type2">
+                                            <img src="img/pay-icon3.svg" alt="" class="delivery-way__icon">
+                                            <div class="text18 medium-text">
+                                                Курьерская доставка <br> по Москве
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="delivery-way__field">
+                                        <input type="radio" name="deliveryWay">
+                                        <div class="delivery-way">
+                                            <img src="img/delivery-way.svg" alt="" class="delivery-way__img">
+                                        </div>
+                                    </div>
+                                    <div class="delivery-way__field">
+                                        <input type="radio" name="deliveryWay">
+                                        <div class="delivery-way">
+                                            <img src="img/delivery-way2.svg" alt="" class="delivery-way__img">
+                                        </div>
+                                    </div>
+                                    <div class="delivery-way__field">
+                                        <input type="radio" name="deliveryWay">
+                                        <div class="delivery-way">
+                                            <img src="img/delivery-way3.svg" alt="" class="delivery-way__img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-address">
+                                <div class="h2 h3-tablet">
+                                    Адрес доставки
+                                </div>
+                                <div class="order-address__fields">
+                                    <div class="fg _full">
+                                        <label>Имя*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="fg _full">
+                                        <label>Телефон*</label>
+                                        <input type="tel">
+                                    </div>
+                                    <div class="fg _full">
+                                        <label>E-mail*</label>
+                                        <input type="email">
+                                    </div>
+                                    <div class="fg _full">
+                                        <label>Город</label>
+                                        <select>
+                                            <option selected>Москва</option>
+                                            <option>Санкт-Петербург</option>
+                                            <option>казань</option>
+                                        </select>
+                                    </div>
+                                    <div class="fg _full">
+                                        <label>Улица*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="fg">
+                                        <label>Дом*</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="fg">
+                                        <label>Квартира</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="fg _full">
+                                        <label>Индекс*</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__nav">
+                                <button class="order__btn m-btn m-btn-primary">
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="order__col2">
+                            <div class="order-summary order-summary3">
+                                <div class="order-summary3__top _flex-between">
+                                    <div class="h3">
+                                        Ваш заказ
+                                    </div>
+                                    <a href="" class="text-btn">
+                                        <span>Изменить</span>
                                     </a>
                                 </div>
-                                <div class="m-captcha">
-                                    <img src="img/captcha.svg" alt="" class="m-captcha__img">
+
+                                <div class="order-summary3__preview">
+                                    <div class="order-item">
+                                        <div class="order-item__img">
+                                            <img src="img/order-img.webp" alt="">
+                                        </div>
+                                        <div class="order-item__content">
+                                            <a href="" class="text-btn">
+                                                <span>Перчатки Rayvel</span>
+                                            </a>
+                                            <div class="catalog-info__prices">
+                                                <div class="catalog-info__price text-error-up">
+                                                    <span class="text18 medium-text">7 900 ₽</span>
+                                                </div>
+                                                <div class="catalog-info__price2">
+                                                    <span class="text18 medium-text">7 900</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-item__props">
+                                                <div class="text18">Цвет: черный</div>
+                                                <div class="text18">Размер: S</div>
+                                                <div class="text18">Количествое: 1 шт</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-item">
+                                        <div class="order-item__img">
+                                            <img src="img/order-img.webp" alt="">
+                                        </div>
+                                        <div class="order-item__content">
+                                            <a href="" class="text-btn">
+                                                <span>Перчатки Rayvel</span>
+                                            </a>
+                                            <div class="catalog-info__prices">
+                                                <div class="catalog-info__price text-error-up">
+                                                    <span class="text18 medium-text">7 900 ₽</span>
+                                                </div>
+                                                <div class="catalog-info__price2">
+                                                    <span class="text18 medium-text">7 900</span>
+                                                </div>
+                                            </div>
+                                            <div class="order-item__props">
+                                                <div class="text18">Цвет: черный</div>
+                                                <div class="text18">Размер: S</div>
+                                                <div class="text18">Количествое: 1 шт</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="order-summary__items">
+                                    <div class="order-summary__item">
+                                        <div class="text18 text-base-dn">
+                                            Товары — 2 шт.
+                                        </div>
+                                        <div class="text18 medium-text">
+                                            15 810 ₽
+                                        </div>
+                                    </div>
+                                    <div class="order-summary__item">
+                                        <div class="text18 text-base-dn">
+                                            Скидка
+                                        </div>
+                                        <div class="text18 medium-text text-error-up">
+                                            -10 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary__bottom">
+                                    <div class="h3">Итого</div>
+                                    <div class="h3">15 800 ₽</div>
                                 </div>
 
                             </div>
-                            <button class="auth-form__btn m-btn m-btn-primary">
-                                <span>Войти</span>
-                            </button>
-                            <div class="auth-form__bottom">
-                                <div class="auth-form__question text18 text-base-dn">
-                                    Не зарегистрированы?
-                                </div>
-                                <a href="" class="auth-form__link text-btn">
-                                    <span>Зарегистрироваться</span>
-                                </a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

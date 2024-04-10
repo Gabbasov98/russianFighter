@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
-    <title>Авторизация</title>
+    <title>Корзина</title>
 </head>
 
 
@@ -187,65 +187,211 @@
         </header>
         <main class="content">
 
-            <div class="auth">
+            <div class="cart page-block">
                 <div class="container">
                     <ul class="breadcrumbs">
                         <li><a href="">Главная</a></li>
-                        <li><a>Авторизация</a></li>
+                        <li><a>Корзина</a></li>
                     </ul>
-                    <div class="auth__inner">
-                        <form action="" class="auth-form">
-                            <h1 class="h2">
-                                Авторизация
-                            </h1>
-                            <div class="auth-form__fields">
-                                <div class="fg">
-                                    <label>E-mail*</label>
-                                    <input type="email">
-                                </div>
-                                <fieldset class="fg">
-                                    <label>Пароль *</label>
-                                    <div class="fg__field">
-                                        <input type="password">
-                                        <button type="button" class="pass-toggle">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.17337 9.81735C3.26219 6.65385 6.36151 4.38776 9.99997 4.38776C13.6384 4.38776 16.7377 6.65385 17.8266 9.81735C17.8673 9.93571 17.8673 10.0643 17.8266 10.1826C16.7377 13.3462 13.6384 15.6122 9.99997 15.6122C6.36151 15.6122 3.26219 13.3462 2.17337 10.1826C2.13264 10.0643 2.13264 9.93571 2.17337 9.81735ZM3.30064 10C4.28528 12.606 6.90158 14.4898 9.99997 14.4898C13.0984 14.4898 15.7147 12.606 16.6993 10C15.7147 7.394 13.0984 5.51021 9.99997 5.51021C6.90158 5.51021 4.28528 7.394 3.30064 10Z" fill="#2E2C2F" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99992 7.75517C8.76009 7.75517 7.75502 8.76025 7.75502 10.0001C7.75502 11.2399 8.76009 12.245 9.99992 12.245C11.2397 12.245 12.2448 11.2399 12.2448 10.0001C12.2448 8.76025 11.2397 7.75517 9.99992 7.75517ZM6.63257 10.0001C6.63257 8.14033 8.14018 6.63272 9.99992 6.63272C11.8596 6.63272 13.3673 8.14033 13.3673 10.0001C13.3673 11.8598 11.8596 13.3674 9.99992 13.3674C8.14018 13.3674 6.63257 11.8598 6.63257 10.0001Z" fill="#2E2C2F" />
+                    <div class="profile__title">
+                        <h1 class="h1 h2-tablet">
+                            Корзина
+                        </h1>
+                    </div>
+
+                    <div class="cart__nav _flex _mt28">
+                        <div class="cart-check-all">
+                            <input type="checkbox">
+                            <div class="cart-check-all__inner m-btn m-btn-primary-outline">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.87511 15L4.5 10.6249L5.74978 9.37511L8.87599 12.4987L8.87511 12.4996L16.3747 5L17.6244 6.24978L10.1249 13.7502L8.87599 14.9991L8.87511 15Z" fill="#32A2A8" />
+                                </svg>
+                                <span class="_view1">Выбрать все</span>
+                                <span class="_view2">Отменить</span>
+                            </div>
+                        </div>
+                        <button class="cart__delete delete-btn m-btn m-btn-red-outline">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M2.16666 5.00001C2.16666 4.53977 2.53975 4.16667 2.99999 4.16667H18C18.4602 4.16667 18.8333 4.53977 18.8333 5.00001C18.8333 5.46024 18.4602 5.83334 18 5.83334H2.99999C2.53975 5.83334 2.16666 5.46024 2.16666 5.00001Z" fill="#C8284E" />
+                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M8.83334 2.49999C8.61233 2.49999 8.40037 2.58779 8.24409 2.74407C8.08781 2.90035 8.00001 3.11231 8.00001 3.33333V4.99999C8.00001 5.46023 7.62691 5.83333 7.16668 5.83333C6.70644 5.83333 6.33334 5.46023 6.33334 4.99999V3.33333C6.33334 2.67029 6.59674 2.0344 7.06558 1.56556C7.53442 1.09672 8.1703 0.833328 8.83334 0.833328H12.1667C12.8297 0.833328 13.4656 1.09672 13.9344 1.56556C14.4033 2.0344 14.6667 2.67029 14.6667 3.33333V4.99999C14.6667 5.46023 14.2936 5.83333 13.8333 5.83333C13.3731 5.83333 13 5.46023 13 4.99999V3.33333C13 3.11231 12.9122 2.90035 12.7559 2.74407C12.5997 2.58779 12.3877 2.49999 12.1667 2.49999H8.83334ZM4.66668 4.16666C5.12691 4.16666 5.50001 4.53976 5.50001 4.99999V16.6667C5.50001 16.8877 5.58781 17.0996 5.74409 17.2559C5.90037 17.4122 6.11233 17.5 6.33334 17.5H14.6667C14.8877 17.5 15.0997 17.4122 15.2559 17.2559C15.4122 17.0996 15.5 16.8877 15.5 16.6667V4.99999C15.5 4.53976 15.8731 4.16666 16.3333 4.16666C16.7936 4.16666 17.1667 4.53976 17.1667 4.99999V16.6667C17.1667 17.3297 16.9033 17.9656 16.4344 18.4344C15.9656 18.9033 15.3297 19.1667 14.6667 19.1667H6.33334C5.6703 19.1667 5.03442 18.9033 4.56558 18.4344C4.09674 17.9656 3.83334 17.3297 3.83334 16.6667V4.99999C3.83334 4.53976 4.20644 4.16666 4.66668 4.16666Z" fill="#C8284E" />
+                            </svg>
+                            <span>Удалить выбранные </span>
+                        </button>
+                    </div>
+
+                    <div class="cart__grid _mt48">
+                        <div class="cart__col">
+                            <div class="cart__items">
+                                <div class="cart-card">
+                                    <div class="cart-card__col">
+                                        <div class="cart-card__check m-check">
+                                            <input type="checkbox">
+                                            <label></label>
+                                        </div>
+                                        <div class="cart-card__img">
+                                            <img src="img/order-img.webp" alt="">
+                                        </div>
+                                        <div class="cart-card__content">
+                                            <a href="" class="text18 text-btn">
+                                                <span>Перчатки Rayvel</span>
+                                            </a>
+                                            <div class="catalog-info__prices">
+                                                <div class="catalog-info__price text-error-up">
+                                                    <span class="text18 medium-text">7 900 ₽</span>
+                                                </div>
+                                                <div class="catalog-info__price2">
+                                                    <span class="text18 medium-text">7 900</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-card__props">
+                                                <div class="text18">Цвет: черный</div>
+                                                <div class="text18">Размер: S</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-card__col2">
+                                        <div class='cartcalc'>
+                                            <button class='ccalc-minus m-btn-primary'>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M3.33331 9.99999C3.33331 9.53975 3.70641 9.16666 4.16665 9.16666H15.8333C16.2936 9.16666 16.6666 9.53975 16.6666 9.99999C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99999Z" fill="#EAECF2" />
+                                                </svg>
+                                            </button>
+                                            <input type='text' value='1'>
+                                            <button class='ccalc-plus m-btn-primary'>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M10 3.33334C10.4603 3.33334 10.8334 3.70644 10.8334 4.16668V15.8333C10.8334 16.2936 10.4603 16.6667 10 16.6667C9.53978 16.6667 9.16669 16.2936 9.16669 15.8333V4.16668C9.16669 3.70644 9.53978 3.33334 10 3.33334Z" fill="#EAECF2" />
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M3.33331 9.99999C3.33331 9.53975 3.70641 9.16666 4.16665 9.16666H15.8333C16.2936 9.16666 16.6666 9.53975 16.6666 9.99999C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99999Z" fill="#EAECF2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-card__col3">
+                                        <button class="cart-card__btn delete-btn m-btn m-btn-red-outline">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M2.16666 5.00001C2.16666 4.53977 2.53975 4.16667 2.99999 4.16667H18C18.4602 4.16667 18.8333 4.53977 18.8333 5.00001C18.8333 5.46024 18.4602 5.83334 18 5.83334H2.99999C2.53975 5.83334 2.16666 5.46024 2.16666 5.00001Z" fill="#C8284E" />
+                                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M8.83334 2.49999C8.61233 2.49999 8.40037 2.58779 8.24409 2.74407C8.08781 2.90035 8.00001 3.11231 8.00001 3.33333V4.99999C8.00001 5.46023 7.62691 5.83333 7.16668 5.83333C6.70644 5.83333 6.33334 5.46023 6.33334 4.99999V3.33333C6.33334 2.67029 6.59674 2.0344 7.06558 1.56556C7.53442 1.09672 8.1703 0.833328 8.83334 0.833328H12.1667C12.8297 0.833328 13.4656 1.09672 13.9344 1.56556C14.4033 2.0344 14.6667 2.67029 14.6667 3.33333V4.99999C14.6667 5.46023 14.2936 5.83333 13.8333 5.83333C13.3731 5.83333 13 5.46023 13 4.99999V3.33333C13 3.11231 12.9122 2.90035 12.7559 2.74407C12.5997 2.58779 12.3877 2.49999 12.1667 2.49999H8.83334ZM4.66668 4.16666C5.12691 4.16666 5.50001 4.53976 5.50001 4.99999V16.6667C5.50001 16.8877 5.58781 17.0996 5.74409 17.2559C5.90037 17.4122 6.11233 17.5 6.33334 17.5H14.6667C14.8877 17.5 15.0997 17.4122 15.2559 17.2559C15.4122 17.0996 15.5 16.8877 15.5 16.6667V4.99999C15.5 4.53976 15.8731 4.16666 16.3333 4.16666C16.7936 4.16666 17.1667 4.53976 17.1667 4.99999V16.6667C17.1667 17.3297 16.9033 17.9656 16.4344 18.4344C15.9656 18.9033 15.3297 19.1667 14.6667 19.1667H6.33334C5.6703 19.1667 5.03442 18.9033 4.56558 18.4344C4.09674 17.9656 3.83334 17.3297 3.83334 16.6667V4.99999C3.83334 4.53976 4.20644 4.16666 4.66668 4.16666Z" fill="#C8284E" />
+                                            </svg>
+                                        </button>
+                                        <button class="cart-card__btn favourite-btn m-btn m-btn-primary-outline">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="_view1" d="M14.001 7.65105L12.8546 6.38499C10.4984 3.80153 6.43146 4.79266 4.87182 8.04065C4.13959 9.56833 3.89187 11.5523 5.22891 14.3672C6.51695 17.0776 9.16803 20.1853 14.001 23.7215C18.8339 20.1853 21.4526 17.0776 22.742 14.3672C24.079 11.5508 24.035 9.56833 23.3014 8.04065C21.7417 4.79266 17.4725 3.80153 15.1162 6.38499L14.001 7.65105ZM14.001 25.7818C-7.46588 10.6514 7.39137 -1.15781 13.7546 5.08878C13.8386 5.17092 13.9212 5.25604 14.001 5.34414C14.08 5.25612 14.1622 5.17143 14.2474 5.09028C20.6092 -1.1608 35.4678 10.6499 14.001 25.7818Z" fill="#42ADB2" />
+                                                <path class="_view2" d="M16.5 4L13.5 6L10.5 4.5H6.5L4 8L3.5 13L7.5 20L13.5 24.5L21.5 18L24 11.5L23.5 7.5L20 4H16.5Z" fill="#C8284E" />
                                             </svg>
                                         </button>
                                     </div>
-                                </fieldset>
+                                </div>
 
-                                <div class="auth-form__wrap">
-                                    <div class="m-check">
-                                        <input checked type="checkbox">
-                                        <label>
-                                            <span>
-                                            Запомнить меня
-                                        </span>
-                                        </label>
+                                <div class="cart-card">
+                                    <div class="cart-card__col">
+                                        <div class="cart-card__check m-check">
+                                            <input type="checkbox">
+                                            <label></label>
+                                        </div>
+                                        <div class="cart-card__img">
+                                            <img src="img/order-img.webp" alt="">
+                                        </div>
+                                        <div class="cart-card__content">
+                                            <a href="" class="text18 text-btn">
+                                                <span>Перчатки Rayvel</span>
+                                            </a>
+                                            <div class="catalog-info__prices">
+                                                <div class="catalog-info__price text-error-up">
+                                                    <span class="text18 medium-text">7 900 ₽</span>
+                                                </div>
+                                                <div class="catalog-info__price2">
+                                                    <span class="text18 medium-text">7 900</span>
+                                                </div>
+                                            </div>
+                                            <div class="cart-card__props">
+                                                <div class="text18">Цвет: черный</div>
+                                                <div class="text18">Размер: S</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <a href="" class="auth-form__link2 text-btn">
-                                        <span>Забыли пароль?</span>
-                                    </a>
-                                </div>
-                                <div class="m-captcha">
-                                    <img src="img/captcha.svg" alt="" class="m-captcha__img">
+                                    <div class="cart-card__col2">
+                                        <div class='cartcalc'>
+                                            <button class='ccalc-minus m-btn-primary'>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M3.33331 9.99999C3.33331 9.53975 3.70641 9.16666 4.16665 9.16666H15.8333C16.2936 9.16666 16.6666 9.53975 16.6666 9.99999C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99999Z" fill="#EAECF2" />
+                                                </svg>
+                                            </button>
+                                            <input type='text' value='1'>
+                                            <button class='ccalc-plus m-btn-primary'>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M10 3.33334C10.4603 3.33334 10.8334 3.70644 10.8334 4.16668V15.8333C10.8334 16.2936 10.4603 16.6667 10 16.6667C9.53978 16.6667 9.16669 16.2936 9.16669 15.8333V4.16668C9.16669 3.70644 9.53978 3.33334 10 3.33334Z" fill="#EAECF2" />
+                                                    <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M3.33331 9.99999C3.33331 9.53975 3.70641 9.16666 4.16665 9.16666H15.8333C16.2936 9.16666 16.6666 9.53975 16.6666 9.99999C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99999Z" fill="#EAECF2" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="cart-card__col3">
+                                        <button class="cart-card__btn delete-btn m-btn m-btn-red-outline">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M2.16666 5.00001C2.16666 4.53977 2.53975 4.16667 2.99999 4.16667H18C18.4602 4.16667 18.8333 4.53977 18.8333 5.00001C18.8333 5.46024 18.4602 5.83334 18 5.83334H2.99999C2.53975 5.83334 2.16666 5.46024 2.16666 5.00001Z" fill="#C8284E" />
+                                                <path class="_fill" fill-rule="evenodd" clip-rule="evenodd" d="M8.83334 2.49999C8.61233 2.49999 8.40037 2.58779 8.24409 2.74407C8.08781 2.90035 8.00001 3.11231 8.00001 3.33333V4.99999C8.00001 5.46023 7.62691 5.83333 7.16668 5.83333C6.70644 5.83333 6.33334 5.46023 6.33334 4.99999V3.33333C6.33334 2.67029 6.59674 2.0344 7.06558 1.56556C7.53442 1.09672 8.1703 0.833328 8.83334 0.833328H12.1667C12.8297 0.833328 13.4656 1.09672 13.9344 1.56556C14.4033 2.0344 14.6667 2.67029 14.6667 3.33333V4.99999C14.6667 5.46023 14.2936 5.83333 13.8333 5.83333C13.3731 5.83333 13 5.46023 13 4.99999V3.33333C13 3.11231 12.9122 2.90035 12.7559 2.74407C12.5997 2.58779 12.3877 2.49999 12.1667 2.49999H8.83334ZM4.66668 4.16666C5.12691 4.16666 5.50001 4.53976 5.50001 4.99999V16.6667C5.50001 16.8877 5.58781 17.0996 5.74409 17.2559C5.90037 17.4122 6.11233 17.5 6.33334 17.5H14.6667C14.8877 17.5 15.0997 17.4122 15.2559 17.2559C15.4122 17.0996 15.5 16.8877 15.5 16.6667V4.99999C15.5 4.53976 15.8731 4.16666 16.3333 4.16666C16.7936 4.16666 17.1667 4.53976 17.1667 4.99999V16.6667C17.1667 17.3297 16.9033 17.9656 16.4344 18.4344C15.9656 18.9033 15.3297 19.1667 14.6667 19.1667H6.33334C5.6703 19.1667 5.03442 18.9033 4.56558 18.4344C4.09674 17.9656 3.83334 17.3297 3.83334 16.6667V4.99999C3.83334 4.53976 4.20644 4.16666 4.66668 4.16666Z" fill="#C8284E" />
+                                            </svg>
+                                        </button>
+                                        <button class="cart-card__btn favourite-btn m-btn m-btn-primary-outline">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="_view1" d="M14.001 7.65105L12.8546 6.38499C10.4984 3.80153 6.43146 4.79266 4.87182 8.04065C4.13959 9.56833 3.89187 11.5523 5.22891 14.3672C6.51695 17.0776 9.16803 20.1853 14.001 23.7215C18.8339 20.1853 21.4526 17.0776 22.742 14.3672C24.079 11.5508 24.035 9.56833 23.3014 8.04065C21.7417 4.79266 17.4725 3.80153 15.1162 6.38499L14.001 7.65105ZM14.001 25.7818C-7.46588 10.6514 7.39137 -1.15781 13.7546 5.08878C13.8386 5.17092 13.9212 5.25604 14.001 5.34414C14.08 5.25612 14.1622 5.17143 14.2474 5.09028C20.6092 -1.1608 35.4678 10.6499 14.001 25.7818Z" fill="#42ADB2" />
+                                                <path class="_view2" d="M16.5 4L13.5 6L10.5 4.5H6.5L4 8L3.5 13L7.5 20L13.5 24.5L21.5 18L24 11.5L23.5 7.5L20 4H16.5Z" fill="#C8284E" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
 
                             </div>
-                            <button class="auth-form__btn m-btn m-btn-primary">
-                                <span>Войти</span>
-                            </button>
-                            <div class="auth-form__bottom">
-                                <div class="auth-form__question text18 text-base-dn">
-                                    Не зарегистрированы?
+                        </div>
+                        <div class="cart__col2">
+                            <div class="order-summary order-summary2">
+                                <div class="order-summary__top">
+                                    <div class="h3">
+                                        Ваш заказ
+                                    </div>
+                                    <div class="order-summary__items">
+                                        <div class="order-summary__item">
+                                            <div class="text18 text-base-dn">
+                                                Товары — 2 шт.
+                                            </div>
+                                            <div class="text18 medium-text">
+                                                15 810 ₽
+                                            </div>
+                                        </div>
+                                        <div class="order-summary__item">
+                                            <div class="text18 text-base-dn">
+                                                Скидка
+                                            </div>
+                                            <div class="text18 medium-text text-error-up">
+                                                -10 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-summary__bottom">
+                                        <div class="h3">Итого</div>
+                                        <div class="h3">15 800 ₽</div>
+                                    </div>
+                                    <div class="order-summary__hint">
+                                        <div class="text14 text-base-dn">Без учета стоимости доставки</div>
+                                    </div>
                                 </div>
-                                <a href="" class="auth-form__link text-btn">
-                                    <span>Зарегистрироваться</span>
-                                </a>
+
+                                <div class="order-summary__nav">
+                                    <button class="order-summary__btn m-btn m-btn-primary">
+                                        <span>Оформить заказ</span>
+                                    </button>
+                                </div>
+                                <div class="m-check">
+                                    <input type="checkbox">
+                                    <label>
+                                        <span>
+                                            Даю согласие на обработку <a href="">персональных данных</a> и соглашаюсь с <a href="">политикой конфиденциальности</a>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
